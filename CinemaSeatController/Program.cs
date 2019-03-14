@@ -10,6 +10,8 @@ namespace CinemaSeatController
     {
         static void Main(string[] args)
         {
+        
+            new SeatController(args);
         }
     }
 }
