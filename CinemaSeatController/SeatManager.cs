@@ -49,6 +49,7 @@ namespace CinemaSeatController
                 }
 
                 Seat seat = new Seat(premium, currentRow);
+                seatList.Add(seat);
                Console.WriteLine("New Seat created! Premium: " + premium + ", Row: " + seat.getRow() + ", Number: " + i);   
                 currentSeatsInRow++;
             }

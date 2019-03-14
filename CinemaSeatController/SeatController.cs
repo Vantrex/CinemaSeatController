@@ -16,6 +16,9 @@ namespace CinemaSeatController
 
         private SeatControllerUI seatControllerUI;
 
+        private int price;
+        private int premiumPrice;
+
         public SeatController(string[] args)
         {
 
@@ -110,6 +113,26 @@ namespace CinemaSeatController
         public SeatManager getSeatManager()
         {
             return seatManager;
+        }
+
+        public int getPrice()
+        {
+            return price;
+        }
+
+        public int getPremiumPrice()
+        {
+            return premiumPrice;
+        }
+
+        public void setPrice(int price)
+        {
+            this.price = price;
+        }
+
+        public void setPremiumPrice(int premiumPrice)
+        {
+            this.premiumPrice = premiumPrice;
         }
 
         public static SeatController getInstance()

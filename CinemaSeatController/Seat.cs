@@ -16,7 +16,7 @@ namespace CinemaSeatController
         public Seat(bool premium, int row)
         {
             this.premium = premium;
-            this.valid = false;
+            this.valid = true;
             this.row = row;
         }
 

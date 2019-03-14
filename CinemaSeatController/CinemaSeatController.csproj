@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PriceEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceEditForm.Designer.cs">
+      <DependentUpon>PriceEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seat.cs" />
     <Compile Include="SeatController.cs" />
     <Compile Include="Program.cs" />
@@ -60,6 +66,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PriceEditForm.resx">
+      <DependentUpon>PriceEditForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeatControllerUI.resx">
       <DependentUpon>SeatControllerUI.cs</DependentUpon>
     </EmbeddedResource>
